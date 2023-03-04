@@ -1,0 +1,45 @@
+body{
+    background: rgb(131, 216, 244);
+    font-family: Poppins;
+}
+.flex-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+}
+.container{
+    width: 335px;
+    height: 500px;
+    border-radius: 20px;
+    background: white;
+}
+.content{
+    font-size: 16px;
+    text-align: center;
+}
+.content p{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+.content span{
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.qr{
+    text-align: center;
+    margin: 18px 0px;
+}
+.qr img{
+    width: 90%;
+    border-radius: 10px;
+}
+.attribution { 
+    font-size: 12px; text-align: center;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}

@@ -1,44 +1,79 @@
-body{
-    background: rgb(131, 216, 244);
-    font-family: Poppins;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+body {
+  background: hsl(212, 45%, 89%);
+  font-family: Outfit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
 }
-.flex-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+
+.container {
+  max-width: 335px;
+  height: 500px;
+  border-radius: 20px;
+  background: white;
+  padding: 0.1rem 0;
 }
-.container{
-    width: 335px;
-    height: 500px;
-    border-radius: 20px;
-    background: white;
+
+.container::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.226);
+  min-width: 345px;
+  min-height: 510px;
+  z-index: -1;
+  filter: blur(1rem);
 }
-.content{
-    font-size: 16px;
-    text-align: center;
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
 }
-.content p{
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 0px;
-    margin-bottom: 5px;
+
+.content {
+  text-align: center;
 }
-.content span{
-    font-size: 13px;
-    color: rgba(0, 0, 0, 0.5);
+
+.improve-skills {
+  color: hsl(218, 44%, 22%);
+  font-size: 18px;
+  padding: 0 4rem;
+  font-weight: 700;
 }
-.qr{
-    text-align: center;
-    margin: 18px 0px;
+
+.content span {
+  font-size: 13px;
+  color: hsl(220, 15%, 55%);
+  letter-spacing: 0.04rem;
 }
-.qr img{
-    width: 90%;
-    border-radius: 10px;
+
+.qr {
+  text-align: center;
+  margin: 18px 0px;
 }
-.attribution { 
-    font-size: 12px; text-align: center;
+
+.qr img {
+  width: 90%;
+  border-radius: 10px;
 }
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }

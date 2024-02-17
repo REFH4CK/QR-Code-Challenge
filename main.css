@@ -1,13 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 
-body {
-  background: hsl(212, 45%, 89%);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Outfit;
+}
+
+main {
+  background: hsl(212, 45%, 89%);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: calc(100vh - 2rem);
 }
 
 .container {
@@ -65,8 +71,8 @@ body {
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
+  height: 2rem;
+  background: hsl(212, 45%, 89%);
 }
 
 .attribution {
